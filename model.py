@@ -67,7 +67,7 @@ class PSModelHyper(torch.nn.Module):
 
         return out_dict
 
-
+ 
 class PSModel(torch.nn.Module):
     def __init__(self, n_dim, n_obj, hidden_size: int = 64, n_layer: int = 2):
         super().__init__()
