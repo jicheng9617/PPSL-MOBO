@@ -8,4 +8,4 @@ setup(
         # list of your project's dependencies
     ],
     python_requires='>=3.9',
-)
+) 
