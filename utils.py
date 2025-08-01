@@ -166,7 +166,7 @@ def sample_historical_data(historical_data, sampling_strategy, max_samples,
             indices = torch.multinomial(weights, max_samples, replacement=True)
         else:
             indices = torch.arange(n_total, device=device)
-            
+             
     elif sampling_strategy == 'weighted':
         # Linear weighting based on recency
         ages = current_gen - gens_all.float()
