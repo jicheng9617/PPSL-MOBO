@@ -92,7 +92,7 @@ def generate_ps(
         return output.squeeze(0)
     
     return output
-
+ 
 
 def trainer_ppsl_bo_random(
         problem: any, 
