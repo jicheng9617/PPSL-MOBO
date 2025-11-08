@@ -470,8 +470,7 @@ def run_experiments(method):
     
     # pop_size
     problems_config = {
-        **{f"df{i}": 100 for i in range(1, 15)},  # df1-df9: pop_size=100
-        # **{f"df{i}": 150 for i in range(10, 15)}  # df10-df14: pop_size=150
+        **{f"df{i}": 100 for i in range(1, 15)},
     }
     
     total_experiments = len(n_t_values) * len(problems_config)
