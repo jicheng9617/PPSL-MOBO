@@ -1,25 +1,32 @@
 # PPSL-MOBO
 
-Code for **Parametric Pareto Set Learning (PPSL) for Expensive Multi-Objective Optimization**.
+Code for the AAAI 2026 paper: *Parametric Pareto Set Learning for Expensive Multi-Objective Optimization*.
 
-The repository is structured for simplicity and readability. It contains:
+## Repository Overview
 
-- <code>**mobo/**</code>: Files for surrogate model definition and training (borrowed from the [PSL-MOBO](https://github.com/Xi-L/PSL-MOBO) repository).
-- <code>**problems/**:</code> Implementation of functions for:
-  - Multi-objective optimization with shared components.
-  - Dynamic multi-objective optimization problems.
-- <code>**results/**</code>: Contains raw experimental results (only for the review period; will be deleted post-review).
+- `mobo/`: Contains modules for Gaussian Process surrogate models and their training, building upon the [PSL-MOBO](https://github.com/Xi-L/PSL-MOBO) codebase.
 
-### Key Files:
-- <code>**baselines_mobo.py**</code>: MOBO methods implemented as benchmarks.
-- <code>**experiment_dmop.py**</code>: Main experiment file for dynamic multi-objective optimization problems.
-- <code>**experiment_mop_sc.py**</code>: Main experiment file for multi-objective optimization with shared components.
-- <code>**model.py**</code>: Definitions of Parametric Pareto Set Learning (PPSL) models.
-- <code>**trainer.py**</code>: Training methods for PPSL, including:
-  - Randomly distributed parameters.
-  - Fixed parameters.
-- <code>**utils.py**</code>: Provides gradient computations for smooth Tchebycheff scalarization functions.
-- <code>**setup.py**</code>: Package setup file.
+- `problems/`: A collection of synthetic test problems used in our experiments. This includes:
 
-### License
-This repository is licensed under the terms specified in the `LICENSE` file.
+  - Multi-objective problems with shared components.
+
+  - Dynamic multi-objective optimization problems (DMOPs).
+
+- `results/`: Directory containing the raw data from our experiments. Note: This will be removed after the review process.
+
+## Core Implementation
+
+- `model.py`: Defines the neural network architecture for the Parametric Pareto Set Learner.
+
+- `trainer.py`: Handles the training loop for the PPSL model under different parameterization strategies.
+
+- `baselines_mobo.py`: A unified implementation of competitive MOBO algorithms used as benchmarks.
+
+- `experiment_mop_sc.py`: Runs the primary experiments for problems with shared components.
+
+- `experiment_dmop.py`: Runs the primary experiments for dynamic problems.
+
+- `utils.py`: Provides helper functions, notably for computing gradients of the smooth Tchebycheff scalarization.
+
+## Cite
+If you use this code, please cite the paper:
