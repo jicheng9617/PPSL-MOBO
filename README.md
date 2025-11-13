@@ -1,6 +1,6 @@
 # PPSL-MOBO
 
-Code for the AAAI 2026 paper: *Parametric Pareto Set Learning for Expensive Multi-Objective Optimization*.
+Code for the AAAI 2026 paper: [***Parametric Pareto Set Learning for Expensive Multi-Objective Optimization***](https://arxiv.org/abs/2511.05815).
 
 ## Repository Overview
 
