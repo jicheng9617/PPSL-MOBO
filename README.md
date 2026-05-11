@@ -21,3 +21,14 @@ Code for the AAAI 2026 paper: [***Parametric Pareto Set Learning for Expensive M
 
 ## Cite
 If you use this code, please cite the paper:
+```bib
+@inproceedings{cheng2026parametric,
+  title={Parametric Pareto Set Learning for Expensive Multi-Objective Optimization},
+  author={Cheng, Ji and Xue, Bo and Zhang, Qingfu},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={40},
+  number={43},
+  pages={36829--36837},
+  year={2026}
+}
+```
